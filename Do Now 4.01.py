@@ -51,3 +51,5 @@ multi_fruit = []
 for item in single_fruit:
     multi_fruit.append(f"{item}s")
     print(item)
+
+
