@@ -99,7 +99,7 @@ def vertical_stars_and_stripes():
         my_string += ' -'
         print(my_string)
 
-        
+       
 
 '''
 5.  Use a function to create your own pattern or drawing. Some possible pattern ideas:
@@ -115,9 +115,27 @@ def vertical_stars_and_stripes():
         * - - - - - - *
         * - - - - - - *
         * * * * * * * *
+
+
+'''
+def star_square():
+    for j in range(1, 9):
+        my_square = ''
+        for i in range(1,9):
+            if j == 1 or j == 8:
+                my_square += '* '
+            else:
+                if i == 1 or i == 8:
+                    my_square += '* '
+                else:
+                    my_square += '- '
+        print(my_square)
+star_square()
+
+'''
     Write a function that will print the following balanced_triangle.
 
-        1
+       1
         1 2
         1 2 3
         1 2 3 4
@@ -130,6 +148,15 @@ def vertical_stars_and_stripes():
         1 2 3
         1 2
         1
+
+    '''
+def increasing_triangle():
+    triangle_list = ''
+    for i in range(1,8):
+        triangle_list += " " + str(i)
+        print(triangle_list)
+
+    '''
     Write a function that will print the following triangle.
 
         *
@@ -137,7 +164,4 @@ def vertical_stars_and_stripes():
         *****
     
 '''
-# Write the code for your custom function below:
-def my_function():
-    # replace 'pass' with your code
-    pass
+
